@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+
+    background: url('../img.jpg') no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.wrapper {
+    width: 600px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    height: 700px;
+    backdrop-filter: blur(20px);
+
+}
+
+.calculatorSalary .day {
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    height: 50px;
+    width: 300px;
+}
+
+.card-footer {
+    height: 140px;
+    /* width: 35%; */
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 60px;
+    color: #f9f9f9 !important;
+    font-weight: 700;
+    transition: all 0.5s;
+    text-align: center;
+    width: 300px;
+}
+
+#kqMedium {
+    font-size: 14px;
+
+    /* line-height: 1.2; */
+}
