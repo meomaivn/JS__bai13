@@ -72,14 +72,32 @@ btn__Convert.onclick = function () {
   var kq = "Tiền của bạn được đổi là: " + cal + " VNĐ";
 
   // Đầu ra
-  var kqUSD = document.getElementById("kqUSD");
-  kqUSD.innerHTML = kq;
+  // var kqUSD = document.getElementById("kqUSD");
+  // kqUSD.innerHTML = kq;
 
-  //   var result = "";
-  //   result += "<p>Đổi tỉ giá VND to USD</p>";
-  //   result += "<p>Số tiền bạn đổi được là" + cal + "</p>";
-  //   result += "<p>Tỉ giá USD,VND là" + convertUSDVND + "</p>";
-  //   console.log(result);
-  //   var conUSD = document.getElementById(conUSD);
-  //   conUSD.innerHTML = result;
+  var result = "";
+  result += "<p>Đổi tỉ giá VND to USD</p>";
+  result += "<p>Số tiền bạn đổi được là: " + cal + " VNĐ</p>";
+  result += "<p>Tỉ giá USD,VND là: " + convertUSDVND + " VNĐ</p>";
+  console.log(result);
+
+  var conUSD = document.getElementById("conUSD");
+  console.log(conUSD);
+  conUSD.innerHTML = result;
+};
+var btn__Rectangle = document.getElementById("btn__Rectangle");
+btn__Rectangle.onclick = function () {
+  var width = document.getElementById("width").value * 1;
+  var height = document.getElementById("height").value * 1;
+  var perimeter = (width + height) * 2;
+  var acreage = width * height;
+  console.log(width, height, perimeter, acreage);
+  // Đầu ra
+  var result = "";
+  result += "Tính Diện Tích và Chu vi HCN";
+  result += "<p>Chu vi hình chữ nhật là" + perimeter + "</p>";
+  result += "<p>Diện tích hình chữ nhật là: " + acreage + " </p>";
+  console.log(result);
+  var kqRectangle = document.getElementById("kqRectangle");
+  kqRectangle.innerHTML = result;
 };
