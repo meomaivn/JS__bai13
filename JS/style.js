@@ -85,6 +85,15 @@ btn__Convert.onclick = function () {
   console.log(conUSD);
   conUSD.innerHTML = result;
 };
+/** Bài 04: Tính Chu vi và diện tích hcn
+ * * B1: Nhập giá chiều dài và chiều rộng
+ *   B2: Xử lý nút Btn_Rectangle --> onclick
+ * CV= (dài + rộng)*2;
+ * Diện tích=(Dài *Rộng);
+ * B3: Xuất thông tin ra UI cho người dùng
+ *
+ * **/
+
 var btn__Rectangle = document.getElementById("btn__Rectangle");
 btn__Rectangle.onclick = function () {
   var width = document.getElementById("width").value * 1;
@@ -95,9 +104,32 @@ btn__Rectangle.onclick = function () {
   // Đầu ra
   var result = "";
   result += "Tính Diện Tích và Chu vi HCN";
-  result += "<p>Chu vi hình chữ nhật là" + perimeter + "</p>";
+  result += "<p>Chu vi hình chữ nhật là: " + perimeter + "</p>";
   result += "<p>Diện tích hình chữ nhật là: " + acreage + " </p>";
   console.log(result);
   var kqRectangle = document.getElementById("kqRectangle");
   kqRectangle.innerHTML = result;
+};
+
+/***
+ * Bài 05: Tổng 2 ký số
+ **
+ *
+ *
+ * */
+var btn__SumNumber = document.getElementById("btn__SumNumber");
+btn__SumNumber.onclick = function () {
+  var number_1 = document.getElementById("number_1").value * 1;
+  var hangDonVi = number_1 % 10;
+  var hangChuc = Math.floor(number_1 / 10);
+  var tongKy = hangDonVi + hangChuc;
+
+  // Đầu ra;
+  var result = "";
+  result += "Tổng kí số: ";
+  result += "<p> Hàng đơn vị là: " + hangDonVi + " </p>";
+  result += "<p>Hàng chục là: " + hangChuc + "</p>";
+  result += "<p>Tổng cộng 2 số: " + tongKy + "</p>";
+  var kqSumNumber = document.getElementById("kqSumNumber");
+  kqSumNumber.innerHTML = result;
 };
